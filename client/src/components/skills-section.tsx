@@ -3,13 +3,13 @@ import { Card, CardContent } from '@/components/ui/card';
 import { 
   SiJavascript,
   SiTypescript,
-  SiJava,
+  SiOpenjdk,
   SiPython,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
   SiFastapi,
-  SiMaterialui,
+  SiMui,
   SiPostgresql,
   SiMongodb,
   SiRedis,
@@ -23,7 +23,7 @@ const skillCategories = [
     skills: [
       { name: "JavaScript", icon: <SiJavascript className="w-16 h-16" />, color: "text-yellow-500" },
       { name: "TypeScript", icon: <SiTypescript className="w-16 h-16" />, color: "text-blue-500" },
-      { name: "Java", icon: <SiJava className="w-16 h-16" />, color: "text-red-600" },
+      { name: "Java", icon: <SiOpenjdk className="w-16 h-16" />, color: "text-red-600" },
       { name: "Python", icon: <SiPython className="w-16 h-16" />, color: "text-yellow-400" },
     ]
   },
@@ -34,7 +34,7 @@ const skillCategories = [
       { name: "Next.js", icon: <SiNextdotjs className="w-16 h-16" />, color: "text-slate-100" },
       { name: "Node.js", icon: <SiNodedotjs className="w-16 h-16" />, color: "text-green-500" },
       { name: "FastAPI", icon: <SiFastapi className="w-16 h-16" />, color: "text-green-400" },
-      { name: "Material-UI", icon: <SiMaterialui className="w-16 h-16" />, color: "text-blue-500" },
+      { name: "Material-UI", icon: <SiMui className="w-16 h-16" />, color: "text-blue-500" },
     ]
   },
   {
