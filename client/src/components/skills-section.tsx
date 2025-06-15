@@ -84,13 +84,14 @@ export function SkillsSection() {
                 {category.skills.map((skill, skillIndex) => (
                   <Card
                     key={skill.name}
-                    className="glass border-none hover:scale-105 transition-transform duration-300 tech-logo"
+                    className="glass border-none hover:scale-105 transition-all duration-300 tech-logo cursor-pointer"
                     style={{ 
-                      animationDelay: `${(categoryIndex * category.skills.length + skillIndex) * 0.1}s` 
+                      animationDelay: `${(categoryIndex * category.skills.length + skillIndex) * 0.1}s`,
+                      transform: `translateY(${Math.sin((mousePosition.x + skillIndex * 20) * 0.01) * 2}px)`
                     }}
                   >
                     <CardContent className="p-6 text-center">
-                      <div className={`${skill.color} mb-3 flex justify-center`}>
+                      <div className={`${skill.color} mb-3 flex justify-center transition-all duration-300 hover:scale-110`}>
                         {skill.icon}
                       </div>
                       <p className="font-semibold text-slate-100">{skill.name}</p>

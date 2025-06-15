@@ -2,6 +2,7 @@ import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Check, MapPin, Calendar } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const experiences = [
   {
@@ -60,6 +61,19 @@ const experiences = [
 
 export function ExperienceSection() {
   const { ref, hasIntersected } = useIntersectionObserver();
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: (e.clientX / window.innerWidth) * 100,
+        y: (e.clientY / window.innerHeight) * 100,
+      });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   return (
     <section id="experience" className="py-20 px-4">
@@ -75,8 +89,11 @@ export function ExperienceSection() {
           {experiences.map((experience, index) => (
             <Card 
               key={`${experience.company}-${experience.period}`}
-              className="glass border-none hover:scale-[1.02] transition-transform duration-300"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="glass border-none hover:scale-[1.02] transition-all duration-300 mouse-parallax"
+              style={{ 
+                animationDelay: `${index * 0.2}s`,
+                transform: `translateX(${mousePosition.x * 0.005}px) translateY(${mousePosition.y * 0.003}px)`
+              }}
             >
               <CardContent className="p-8">
                 <div className="flex flex-wrap justify-between items-start mb-6">
