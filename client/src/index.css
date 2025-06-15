@@ -77,9 +77,9 @@
 
 @layer components {
   .glass {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.6);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(148, 163, 184, 0.2);
   }
 
   .gradient-text {

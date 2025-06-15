@@ -1,5 +1,6 @@
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 import { Card, CardContent } from '@/components/ui/card';
+import { useState, useEffect } from 'react';
 import { 
   SiJavascript,
   SiTypescript,
@@ -51,6 +52,19 @@ const skillCategories = [
 
 export function SkillsSection() {
   const { ref, hasIntersected } = useIntersectionObserver();
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: (e.clientX / window.innerWidth) * 100,
+        y: (e.clientY / window.innerHeight) * 100,
+      });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   return (
     <section id="skills" className="py-20 px-4 bg-slate-900/50">
