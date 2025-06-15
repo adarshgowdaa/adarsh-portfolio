@@ -76,10 +76,6 @@ export function ContactSection() {
           <CardContent className="p-6">
             <div className="space-y-4">
               <div className="flex items-center justify-center gap-2 text-slate-300">
-                <Phone className="w-5 h-5 text-primary" />
-                <span>+91-8660094048</span>
-              </div>
-              <div className="flex items-center justify-center gap-2 text-slate-300">
                 <MapPin className="w-5 h-5 text-primary" />
                 <span>Bengaluru, Karnataka, India</span>
               </div>

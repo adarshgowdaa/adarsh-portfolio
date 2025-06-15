@@ -1,10 +1,10 @@
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
 import { Card, CardContent } from '@/components/ui/card';
 import { useState, useEffect } from 'react';
+import { FaJava, FaPython } from 'react-icons/fa';
 import { 
   SiJavascript,
   SiTypescript,
-  SiOpenjdk,
   SiPython,
   SiReact,
   SiNextdotjs,
@@ -24,8 +24,8 @@ const skillCategories = [
     skills: [
       { name: "JavaScript", icon: <SiJavascript className="w-16 h-16" />, color: "text-yellow-500" },
       { name: "TypeScript", icon: <SiTypescript className="w-16 h-16" />, color: "text-blue-500" },
-      { name: "Java", icon: <SiOpenjdk className="w-16 h-16" />, color: "text-red-600" },
-      { name: "Python", icon: <SiPython className="w-16 h-16" />, color: "text-yellow-400" },
+      { name: "Java", icon: <FaJava className="w-16 h-16" />, color: "text-red-600" },
+      { name: "Python", icon: <FaPython className="w-16 h-16" />, color: "text-yellow-400" },
     ]
   },
   {

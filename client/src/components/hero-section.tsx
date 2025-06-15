@@ -66,10 +66,10 @@ export function HeroSection() {
         <div className="space-y-8">
           <div className="space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              Hi, I'm <span className="gradient-text">A Adarsh</span>
+              🙋🏽 I'm <span className="gradient-text">A Adarsh</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 font-light">
-              Software Developer & <span className="text-accent font-semibold">GenAI Engineer</span>
+              Software Engineer | <span className="text-accent font-semibold">Building GenAI Solutions</span>
             </p>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
               Building innovative GenAI-enabled SaaS solutions with cutting-edge technologies

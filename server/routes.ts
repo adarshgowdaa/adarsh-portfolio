@@ -8,7 +8,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/resume/download", (req, res) => {
     // In a real implementation, this would serve the actual PDF file
     // For now, we'll just send the PDF path or create a simple response
-    const resumePath = path.join(process.cwd(), "attached_assets", "A_Adarsh_Resume_1749990007251.pdf");
+    const resumePath = path.join(process.cwd(), "attached_assets", "A_Adarsh_Resume.pdf");
     
     res.download(resumePath, "A_Adarsh_Resume.pdf", (err) => {
       if (err) {

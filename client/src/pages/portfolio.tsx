@@ -23,7 +23,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 px-4 text-center border-t border-slate-700">
         <p className="text-slate-400">
-          &copy; 2024 A Adarsh. Crafted with passion for technology and innovation.
+          &copy; {new Date().getFullYear()} A Adarsh. Crafted with passion for technology and innovation.
         </p>
       </footer>
     </div>
