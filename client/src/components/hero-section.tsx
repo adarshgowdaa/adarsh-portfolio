@@ -69,7 +69,7 @@ export function HeroSection() {
               🙋🏽 I'm <span className="gradient-text">A Adarsh</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 font-light">
-              Software Engineer | <span className="text-accent font-semibold">Building GenAI Solutions</span>
+              Software Engineer | <span className="text-accent font-semibold">Building GenAI-Driven SaaS</span>
             </p>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
               Building innovative GenAI-enabled SaaS solutions with cutting-edge technologies
