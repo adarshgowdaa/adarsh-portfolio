@@ -1,0 +1,8 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clean rounded square background -->
+  <rect width="32" height="32" rx="6" fill="#0f172a"/>
+  
+  <!-- Modern letter A -->
+  <path d="M16 9L22 23H19.5L18.2 19.5H13.8L12.5 23H10L16 9ZM17.5 17L16 13L14.5 17H17.5Z" 
+        fill="#f8fafc"/>
+</svg>
