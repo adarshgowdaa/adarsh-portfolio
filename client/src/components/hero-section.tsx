@@ -14,7 +14,7 @@ export function HeroSection() {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/api/resume/download';
+    link.href = '/A_Adarsh_Resume.pdf';
     link.download = 'A_Adarsh_Resume.pdf';
     link.click();
   };
