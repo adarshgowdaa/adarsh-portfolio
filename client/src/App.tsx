@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Portfolio from "@/pages/portfolio";
 import NotFound from "@/pages/not-found";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <SpeedInsights />
       <TooltipProvider>
         <Toaster />
         <Router />
